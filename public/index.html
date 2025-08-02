@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mic Test</title>
+  </head>
+  <body>
+    <button onclick="startListening()">Start Listening</button>
+    <pre id="output">...</pre>
+
+    <script>
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const output = document.getElementById('output');
+
+      if (!SpeechRecognition) {
+        output.textContent = 'SpeechRecognition not supported in this browser.';
+      } else {
+        const recognition = new SpeechRecognition();
+        recognition.continuous = true;
+        recognition.interimResults = true;
+        recognition.lang = 'en-IN';
+
+        recognition.onresult = (event) => {
+          let text = '';
+          for (let i = event.resultIndex; i < event.results.length; i++) {
+            text += event.results[i][0].transcript + '\n';
+          }
+          output.textContent = text;
+        };
+
+        window.startListening = () => {
+          recognition.start();
+        };
+      }
+    </script>
+  </body>
+</html>

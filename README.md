@@ -1,4 +1,5 @@
-<img width="3188" height="1202" alt="banner" src="https://github.com/user-attachments/assets/bb01a2cc-bb64-495d-9d50-4764c170baa2" />
+
+<img width="3188" height="1202" alt="banner" src="https://github.com/user-attachments/assets/8bd52c6c-a66c-4942-bf82-df4d15e469d9" />
 
 [OLDVIS] 🎯
 

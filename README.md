@@ -83,6 +83,7 @@ Video
 
 [Video demonstrates the working of the chatbot](https://drive.google.com/file/d/1jW85ytsv9DjjCCdkmDuJ69r8F6lTHp-m/view?usp=sharing)
 
+URL for website: https://github.com/razinnnit/uselessproject_2025.git
 
 Team Contributions
 
